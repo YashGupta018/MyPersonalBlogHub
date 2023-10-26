@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compose New Article - MyPersonalBlogHub</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <h1>Compose a New Article</h1>
+    <form action="/compose" method="post">
+        <div>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" required>
+        </div>
+        <div>
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" required>
+        </div>
+        <div>
+            <label for="title">Blog Title:</label>
+            <input type="text" id="title" name="title" required>
+        </div>
+        <div>
+            <label for="images">Images Links:</label>
+            <input type="text" id="images" name="images" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="content">Blog Information:</label>
+            <textarea id="content" name="content" rows="10" required></textarea>
+        </div>
+        <button type="submit">Publish</button>
+    </form>
+</body>
+</html>

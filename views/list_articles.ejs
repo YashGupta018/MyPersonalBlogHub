@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Articles - MyPersonalBlogHub</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <h1>All Articles</h1>
+    <ul>
+        <% articles.forEach(article => { %>
+            <li>
+                <h2><%= article.title %></h2>
+                <p><%= article.name %></p>
+                <a href="/read/<%= article._id %>">Read More</a>
+                <form action="/delete/<%= article._id %>" method="post">
+                    <button type="submit">Delete</button>
+                </form>
+            </li>
+        <% }) %>
+    </ul>
+    <a href="/compose">Compose a New Article</a>
+</body>
+</html>

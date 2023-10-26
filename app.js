@@ -6,7 +6,7 @@ const Article = require("./models/article");  // Renamed Blog to Article for a f
 const app = express();
 
 // Database connection
-mongoose.connect("mongodb+srv://yashgupta:qlu3iEPJKzJXc5WL@cluster0.njnqlfc.mongodb.net/?retryWrites=true&w=majority")
+mongoose.connect("mongodb+srv://yashgupta:qlu3iEPJKzJXc5WL@cluster0.njnqlfc.mongodb.net/MyPersonalBlogHub?retryWrites=true&w=majority")
     .then(() => console.log('Connected to MyPersonalBlogHub database'))
     .catch(err => console.error('Database connection error:', err.message));
 
